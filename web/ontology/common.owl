@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/amar_/ontologies/2016/3/common.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/amar_/ontologies/2016/3/common.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/amar_/ontologies/2016/3/common.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#process_objective1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Objective_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#associated_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BP1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obligation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Objective"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BPM1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business_Process_Management"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ImprovementOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assoc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#moitoring_objective"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rule_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AssociatedActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Improvement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part-of_BPM0"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#associated_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Rule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part-of_BP0"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assoc_BPM0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part-of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ImprovementDetails"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culture_Management"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#com1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Monitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compliance_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business_Process"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Objective_Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#associatedActivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rule_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#activity_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#activity_name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Activity"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Business_Process"/>
+        <Class IRI="#Business_Process_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Business_Process_Management"/>
+        <Class IRI="#Compliance_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Culture_Management"/>
+        <Class IRI="#Compliance_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obligation"/>
+        <Class IRI="#Compliance_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Activity"/>
+        <Class IRI="#Business_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Improvement"/>
+        <Class IRI="#Business_Process_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Monitoring"/>
+        <Class IRI="#Business_Process_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Objective"/>
+        <Class IRI="#Business_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Rule"/>
+        <Class IRI="#Business_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Program"/>
+        <Class IRI="#Compliance_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recource"/>
+        <Class IRI="#Compliance_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risk_Management"/>
+        <Class IRI="#Compliance_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solution"/>
+        <Class IRI="#Compliance_Management"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Business_Process"/>
+        <Class IRI="#Process_Improvement"/>
+        <Class IRI="#Process_Monitoring"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Business_Process_Management"/>
+        <Class IRI="#Culture_Management"/>
+        <Class IRI="#Obligation"/>
+        <Class IRI="#Program"/>
+        <Class IRI="#Recource"/>
+        <Class IRI="#Risk_Management"/>
+        <Class IRI="#Solution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Process_Activity"/>
+        <Class IRI="#Process_Objective"/>
+        <Class IRI="#Process_Rule"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Business_Process"/>
+        <NamedIndividual IRI="#BP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business_Process_Management"/>
+        <NamedIndividual IRI="#BPM1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Compliance_Management"/>
+        <NamedIndividual IRI="#com1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process_Objective"/>
+        <NamedIndividual IRI="#process_objective1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#part-of_BPM0"/>
+        <NamedIndividual IRI="#BP1"/>
+        <NamedIndividual IRI="#BPM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assoc"/>
+        <NamedIndividual IRI="#BPM1"/>
+        <NamedIndividual IRI="#com1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#part-of_BPM0"/>
+        <NamedIndividual IRI="#process_objective1"/>
+        <NamedIndividual IRI="#BP1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Objective_Description"/>
+        <NamedIndividual IRI="#process_objective1"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">objective description1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Objective_Name"/>
+        <NamedIndividual IRI="#process_objective1"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">objective_name1</Literal>
+    </DataPropertyAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#assoc"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#assoc_BPM0"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assoc"/>
+        <Class IRI="#Compliance_Management"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assoc_BPM0"/>
+        <Class IRI="#Business_Process_Management"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part-of"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part-of_BP0"/>
+        <Class IRI="#Process_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part-of_BP0"/>
+        <Class IRI="#Process_Objective"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part-of_BP0"/>
+        <Class IRI="#Process_Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part-of_BPM0"/>
+        <Class IRI="#Business_Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc"/>
+        <Class IRI="#Business_Process_Management"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc"/>
+        <Class IRI="#Culture_Management"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc"/>
+        <Class IRI="#Obligation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc"/>
+        <Class IRI="#Recource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc"/>
+        <Class IRI="#Risk_Management"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc_BPM0"/>
+        <Class IRI="#Process_Improvement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assoc_BPM0"/>
+        <Class IRI="#Process_Monitoring"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#part-of"/>
+        <Class IRI="#Compliance_Management"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#part-of_BP0"/>
+        <Class IRI="#Business_Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#part-of_BPM0"/>
+        <Class IRI="#Business_Process_Management"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AssociatedActivity"/>
+        <Class IRI="#Process_Improvement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ImprovementDetails"/>
+        <Class IRI="#Process_Improvement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ImprovementOperation"/>
+        <Class IRI="#Process_Improvement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Objective_Description"/>
+        <Class IRI="#Process_Objective"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Objective_Name"/>
+        <Class IRI="#Process_Objective"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Status"/>
+        <Class IRI="#Process_Improvement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#activity_description"/>
+        <Class IRI="#Process_Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#activity_name"/>
+        <Class IRI="#Process_Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#associatedActivity"/>
+        <Class IRI="#Process_Monitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#associated_activity"/>
+        <Class IRI="#Process_Rule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#associated_objective"/>
+        <Class IRI="#Process_Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#moitoring_objective"/>
+        <Class IRI="#Process_Monitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rule_description"/>
+        <Class IRI="#Process_Rule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rule_name"/>
+        <Class IRI="#Process_Rule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#Process_Monitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AssociatedActivity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ImprovementDetails"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ImprovementOperation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Objective_Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Objective_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#activity_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#activity_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#associatedActivity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#associated_activity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#associated_objective"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#moitoring_objective"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rule_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rule_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#assoc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">association between compliance management and its subclasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#assoc_BPM0</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">association between business process management and its subclasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#assoc_BPM0</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">assoc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#part-of</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">part-of between compliance management and its subclasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#part-of_BP0</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">part-of between Business Process and its subclasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#part-of_BP0</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">part-of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#part-of_BPM0</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">part-of between Business process management and its sub classes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#part-of_BPM0</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">part-of</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
